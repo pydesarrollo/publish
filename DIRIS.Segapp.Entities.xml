@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.Entities</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.Entities.Base.AuditoriaBase">
+            <summary>
+            Auditoria Base - Reutilizables
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.Estado">
+            <summary>
+            Estado: A=Activo , I=Inactivo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.EstadoRegistro">
+            <summary>
+            Estado Registro: 0=Eliminado, 1=Activo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.FechaCreacion">
+            <summary>
+            Fecha Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.UsuarioCreacion">
+            <summary>
+            Usuario Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.TerminalCreacion">
+            <summary>
+            Terminal Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.FechaModificacion">
+            <summary>
+            Fecha Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.UsuarioModificacion">
+            <summary>
+            Usuario Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Base.AuditoriaBase.TerminalModificacion">
+            <summary>
+            Terminal Modificacion
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Entities.Base.AuditoriaBase.#ctor">
+            <summary>
+            Al crear un Registro se utilizara los siguientes datos
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Acceso.Menu">
+            <summary>
+            Menu
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Acceso.Menu.CodigoUsuarioId">
+            <summary>
+            Codigo Usuario Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Acceso.Menu.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Acceso.Menu.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser">
+            <summary>
+            DIRISIdentityUser
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.ApellidoPaterno">
+            <summary>
+            ApellidoPaterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.ApellidoMaterno">
+            <summary>
+            ApellidoMaterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.servicio">
+            <summary>
+            servicio
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.Telefono2">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.TipoDocumentoIdentidad">
+            <summary>
+            TipoDocumentoIdentidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.TipoDocumentoIdentidadId">
+            <summary>
+            TipoDocumentoIdentidad - TipoDocumentoIdentidadId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.DocumentoIdentidad">
+            <summary>
+            DocumentoIdentidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.Estado">
+            <summary>
+            Estado
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.EstadoRegistro">
+            <summary>
+            EstadoRegistro
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.TM_TipoNivel">
+            <summary>
+            Tipo Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser.CodigoTipoNivelId">
+            <summary>
+            TipoNivel - Codigo Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol">
+            <summary>
+            DIRISIdentityUsuarioRol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol.CodigoUsuarioRolId">
+            <summary>
+            CodigoUsuarioRolId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol.UserId">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol.RoleId">
+            <summary>
+            RoleId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol.Sistema">
+            <summary>
+            Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUsuarioRol.CodigoSistemaId">
+            <summary>
+            CodigoSistemaId
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo">
+            <summary>
+            Modulo Info
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.DescripcionModulo">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.DescripcionSeccion">
+            <summary>
+            Descripcion Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.DescripcionSistema">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.Controlador">
+            <summary>
+            Controlador
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.Info.ModuloInfo.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo">
+            <summary>
+            Modulo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Seccion">
+            <summary>
+            Seccion - Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Controlador">
+            <summary>
+            Controlador
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol">
+            <summary>
+            Entidad Logica Rol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol.Name">
+            <summary>
+            Name
+            </summary>      
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol.NormalizedName">
+            <summary>
+            Normalized Name
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol.ConcurrencyStamp">
+            <summary>
+            Concurrency Stamp
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo">
+            <summary>
+            SeccionInfo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.Info.SeccionInfo.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion">
+            <summary>
+            Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.Sistema">
+            <summary>
+            Sistema - Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema">
+            <summary>
+            Entidad Logica Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.CodigoSistemaId">
+            <summary>
+            CodigoSistemaId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.DescripcionSistema">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.Target">
+            <summary>
+            Target
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.UsarToken">
+            <summary>
+            UsarToken
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.FotoModulo">
+            <summary>
+            Foto Modulo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema.EnlaceInformativo">
+            <summary>
+            Enlace Informativo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo">
+            <summary>
+            Entidad Logica DatoNivelUsuarioInfo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.CodigoTipoNivelId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.DescripcionNivel">
+            <summary>
+            Descripcion Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.Id">
+            <summary>
+            Id del usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.Categoria">
+            <summary>
+            Categoria
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.DescripcionTipoEESS">
+            <summary>
+            Descripcion Tipo EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.Info.DatoNivelUsuarioInfo.AbreviatuaTipoEESS">
+            <summary>
+            Abreviatua Tipo EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelDIRIS">
+            <summary>
+            Entidad Logica DIRIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelDIRIS.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelDIRIS.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS">
+            <summary>
+            Entidad Logica EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.TM_NivelRIS">
+            <summary>
+            RIS - Codigo RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.CodigoIPRESS">
+            <summary>
+            CodigoIPRESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.TM_TipoInstitucion">
+            <summary>
+            TM_TipoInstitucion - Codigo Tipo Institucion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.CodigoTipoInstitucionId">
+            <summary>
+            Codigo Tipo Institucion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.Categoria">
+            <summary>
+            Categoria
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.TM_TipoEESS">
+            <summary>
+            TM_TipoEESS - Codigo RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS">
+            <summary>
+            Entidad Logica RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS.TM_NivelDIRIS">
+            <summary>
+            TM_NivelDIRIS - Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoEESS">
+            <summary>
+            TM_TipoEESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoEESS.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoEESS.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoEESS.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoInstitucion">
+            <summary>
+            TM_TipoInstitucion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoInstitucion.CodigoTipoInstitucionId">
+            <summary>
+            Codigo Tipo Institucion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoInstitucion.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoNivel">
+            <summary>
+            Entidad Logica Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoNivel.CodigoTipoNivelId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_TipoNivel.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional">
+            <summary>
+            Entidad Logica TM_Profesional
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.CodigoProfesionalId">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.Telefono">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.CodigoCargoId">
+            <summary>
+            TipoDocumentoIdentidadId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional.CodigoProfesionId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.TiposDocumentoIdentidad.TM_TipoDocumentoIdentidad">
+            <summary>
+            Tipo Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.TiposDocumentoIdentidad.TM_TipoDocumentoIdentidad.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.TiposDocumentoIdentidad.TM_TipoDocumentoIdentidad.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.TiposDocumentoIdentidad.TM_TipoDocumentoIdentidad.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDepartamento">
+            <summary>
+            Entidad Logica Departamento
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDepartamento.CodigoUbigeoDepartamentoId">
+            <summary>
+            Codigo Ubigeo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDepartamento.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito">
+            <summary>
+            Entidad Logica Distrito
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito.CodigoUbigeoDistritoId">
+            <summary>
+            Codigo Ubigeo Distrito Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito.Provincia">
+            <summary>
+            Provincia - Codigo Ubigeo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito.CodigoUbigeoProvinciaId">
+            <summary>
+            Codigo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia">
+            <summary>
+            Entidad Logica Provincia
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia.CodigoUbigeoProvinciaId">
+            <summary>
+            Codigo Ubigeo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia.Departamento">
+            <summary>
+            Departamento - Codigo Ubigeo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia.CodigoUbigeoDepartamentoId">
+            <summary>
+            Codigo Ubigeo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo">
+            <summary>
+            Usuario EESS Info
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.Id">
+            <summary>
+            Id (CodigoUsuarioId)
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.DescripcionDIRIS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioEESSInfo.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo">
+            <summary>
+            Entidad Logica Usuario Info
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.Servicio">
+            <summary>
+            servicio
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.Telefono2">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.TipoDocumentoIdentidadId">
+            <summary>
+            Tipo Documento Identidad Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.AbreviaturaTipoDocumentoIdentidad">
+            <summary>
+            Abreviatura Tipo Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.DocumentoIdentidad">
+            <summary>
+            Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.CodigoTipoNivelId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.DescripcionNivel">
+            <summary>
+            Descripcion Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.NormalizedUserName">
+            <summary>
+            Normalized UserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.NormalizedEmail">
+            <summary>
+            Normalized Email
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.PasswordHash">
+            <summary>
+            Password Hash
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.PhoneNumber">
+            <summary>
+            Phone Number
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.CodigTipoNivelId">
+            <summary>
+            Codig Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioInfo.DescripcionTipoNivel">
+            <summary>
+            Descripcion Tipo Nivel
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioModuloInfo">
+            <summary>
+            Usuario Modulo Info
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioModuloInfo.CodigoUsuarioModuloId">
+            <summary>
+            Codigo Usuario Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioModuloInfo.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioModuloInfo.DescripcionSeccion">
+            <summary>
+            Descripcion Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioModuloInfo.DescripcionModulo">
+            <summary>
+            Descripcion Modulo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo">
+            <summary>
+            Clase Entidad Logica Usuario Rol Info
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo.CodigoUsuarioRolId">
+            <summary>
+            Codigo Usuario Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo.RoleId">
+            <summary>
+            Role Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo.DescripcionRol">
+            <summary>
+            Descripcion Rol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.Info.UsuarioRolInfo.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario">
+            <summary>
+            Entidad Logica Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.Servicio">
+            <summary>
+            servicio
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.Telefono2">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.TipoDocumentoIdentidad">
+            <summary>
+            TipoDocumentoIdentidad - Tipo Documento Identidad Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.TipoDocumentoIdentidadId">
+            <summary>
+            TipoDocumentoIdentidadId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.TipoNivel">
+            <summary>
+            Tipo Nivel - Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.CodigoTipoNivelId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.DocumentoIdentidad">
+            <summary>
+            Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.NormalizedUserName">
+            <summary>
+            NormalizedUserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.NormalizedEmail">
+            <summary>
+            NormalizedEmail
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.PasswordHash">
+            <summary>
+            PasswordHash
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario.PhoneNumber">
+            <summary>
+            PhoneNumber
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS">
+            <summary>
+            Entidad Logica Usuario EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS.Usuario">
+            <summary>
+            Id - Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS.Id">
+            <summary>
+            Id del usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS.TM_NivelEESS">
+            <summary>
+            Codigo Nivel EESS Id - NivelEESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo">
+            <summary>
+            Usuario Modulo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo.CodigoUsuarioModuloId">
+            <summary>
+            Codigo Usuario Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo.Usuario">
+            <summary>
+            Usuario - Codigo Usuario Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo.CodigoUsuarioId">
+            <summary>
+            Codigo Usuario Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo.Modulo">
+            <summary>
+            Modulo - Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol">
+            <summary>
+            Usuario Rol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.CodigoUsuarioRolId">
+            <summary>
+            Codigo Usuario Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.Usuario">
+            <summary>
+            Usuario - UserId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.UserId">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.Rol">
+            <summary>
+            Rol - RoleId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.RoleId">
+            <summary>
+            Role Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.Sistema">
+            <summary>
+            Sistema - CodigoSistemaId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol.CodigoSistemaId">
+            <summary>
+            CodigoSistemaId
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Entities.Util.CorreoCredencial">
+            <summary>
+            Correo Credencial
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Util.CorreoCredencial.CodigoCorreoCredencialId">
+            <summary>
+            Codigo Correo Credencial Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Util.CorreoCredencial.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Util.CorreoCredencial.Clave">
+            <summary>
+            Clave
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Util.CorreoCredencial.Host">
+            <summary>
+            Host
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Entities.Util.CorreoCredencial.Puerto">
+            <summary>
+            Puerto
+            </summary>
+        </member>
+    </members>
+</doc>

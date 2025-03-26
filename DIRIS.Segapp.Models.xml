@@ -1,0 +1,1645 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.Models</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest">
+            <summary>
+            Clase Datos Usuario Sistema Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.Id">
+            <summary>
+            Id del usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.CodigoNivelRISId">
+            <summary>
+            Codigo RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.CodigoNivelEESSId">
+            <summary>
+            Codigo EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.LoginDtoRequest">
+            <summary>
+            Clase LoginDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.LoginDtoRequest.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.LoginDtoRequest.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.LoginUsuarioDtoRequest">
+            <summary>
+            Login Usuario DtoR equest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.LoginUsuarioDtoRequest.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.LoginSistemaDtoRequest">
+            <summary>
+            Login Sistema Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.LoginSistemaDtoRequest.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.LoginSistemaDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest">
+            <summary>
+            Menu Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest.CodigoUsuarioId">
+            <summary>
+            Codigo Usuario Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest">
+            <summary>
+            TokenDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest.DescripcionTipoEESS">
+            <summary>
+            Descripcion Tipo EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.AuditoriaRequest">
+            <summary>
+            Clase AuditoriaRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.Estado">
+            <summary>
+            Estado
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.EstadoRegistro">
+            <summary>
+            Estado Registro
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.FechaCreacion">
+            <summary>
+            Fecha Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.UsuarioCreacion">
+            <summary>
+            Usuario Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.TerminalCreacion">
+            <summary>
+            Terminal Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.FechaModificacion">
+            <summary>
+            Fecha Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.UsuarioModificacion">
+            <summary>
+            Usuario Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.AuditoriaRequest.TerminalModificacion">
+            <summary>
+            Terminal Modificacion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.BaseRequest">
+            <summary>
+            Clase BaseRequest
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest">
+            <summary>
+            Clase ModuloDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.Controlador">
+            <summary>
+            Controlador
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.RolId">
+            <summary>
+            Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloRolDtoRequest">
+            <summary>
+            Modulo Rol Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloRolDtoRequest.CodigoModuloRolId">
+            <summary>
+            Codigo Modulo Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloRolDtoRequest.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloRolDtoRequest.RolId">
+            <summary>
+            Rol Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest">
+            <summary>
+            Clase SeccionDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest.RolId">
+            <summary>
+            Rol Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest">
+            <summary>
+            Clase SistemaDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.CodigoSistemaId">
+            <summary>
+            CodigoSistemaId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.DescripcionSistema">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.Target">
+            <summary>
+            Target
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.UsarToken">
+            <summary>
+            UsarToken
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.FotoModulo">
+            <summary>
+            Foto Modulo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest.EnlaceInformativo">
+            <summary>
+            Enlace Informativo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest">
+            <summary>
+            Clase UsuarioDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Servicio">
+            <summary>
+            Servicio
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Telefono2">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.TipoDocumentoIdentidadId">
+            <summary>
+            TipoDocumentoIdentidadId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.DocumentoIdentidad">
+            <summary>
+            DocumentoIdentidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.NormalizedUserName">
+            <summary>
+            NormalizedUserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.NormalizedEmail">
+            <summary>
+            NormalizedEmail
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.ConfirmarPassword">
+            <summary>
+            ConfirmarPassword
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.PhoneNumber">
+            <summary>
+            PhoneNumber
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest.CodigoTipoNivelId">
+            <summary>
+            Codigo Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest">
+            <summary>
+            Usuario EESS Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest.Id">
+            <summary>
+            Id del usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest">
+            <summary>
+            Usuario Modulo Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest.CodigoUsuarioId">
+            <summary>
+            Codigo Usuario Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest">
+            <summary>
+            Clase UsuarioRolDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest.CodigoUsuarioRolId">
+            <summary>
+            Codigo Usuario Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest.RoleId">
+            <summary>
+            Role Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest">
+            <summary>
+            Clase RolDtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest.NormalizedName">
+            <summary>
+            NormalizedName
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.Segapp.TipoDocumentoIdentidadDtoRequest">
+            <summary>
+            Clase TipoDocumentoIdentidadDtoRequest
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Cargo.CargoDtoRequest">
+            <summary>
+            Cargo Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Cargo.CargoDtoRequest.CodigoCargoId">
+            <summary>
+            Codigo Cargo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Cargo.CargoDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Cargo.CargoDtoRequest.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelDIRISDtoRequest">
+            <summary>
+            Clase Nivel DIRIS DtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelDIRISDtoRequest.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelDIRISDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest">
+            <summary>
+            Clase Nivel EESS DtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest.CodigoIPRESS">
+            <summary>
+            CodigoIPRESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest.Categoria">
+            <summary>
+            Categoria
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest">
+            <summary>
+            Clase Nivel RIS DtoRequest
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.TipoNivelDtoRequest">
+            <summary>
+            Tipo Nivel Dto Request
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest">
+            <summary>
+            Profesion Dto Request
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.CodigoProfesionalId" -->
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.Telefono">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.CodigoProfesionId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest.CodigoCargoId">
+            <summary>
+            CodigoCargoId
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Profesion.ProfesionDtoRequest">
+            <summary>
+            Profesion Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesion.ProfesionDtoRequest.CodigoProfesionId">
+            <summary>
+            Codigo Profesion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesion.ProfesionDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Profesion.ProfesionDtoRequest.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoRequest">
+            <summary>
+            Clase Ubigeo Departamento Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoRequest.CodigoUbigeoDepartamentoId">
+            <summary>
+            Codigo Ubigeo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest">
+            <summary>
+            Clase Ubigeo Distrito Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest.CodigoUbigeoDistritoId">
+            <summary>
+            Codigo Ubigeo Distrito Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest.CodigoUbigeoProvinciaId">
+            <summary>
+            Codigo Ubigeo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest">
+            <summary>
+            Clase Ubigeo Provincia Dto Request
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest.CodigoUbigeoProvinciaId">
+            <summary>
+            Codigo Ubigeo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest.CodigoUbigeoDepartamentoId">
+            <summary>
+            Codigo Ubigeo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse">
+            <summary>
+            Clase Datos Usuario Sistema DtoResponse
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.CodigoTipoNivelId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.Descripcion">
+            <summary>
+            Descripcion Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.Id">
+            <summary>
+            Id del usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.Categoria">
+            <summary>
+            Categoria
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.DescripcionTipoEESS">
+            <summary>
+            Descripcion Tipo EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.DatoNivelUsuarioDtoResponse.AbreviatuaTipoEESS">
+            <summary>
+            Abreviatua Tipo EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.Acceso.LoginDtoResponse">
+            <summary>
+            Clase LoginDtoResponse
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.LoginDtoResponse.NombresCompletos">
+            <summary>
+            Nombres Completos
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Acceso.LoginDtoResponse.Token">
+            <summary>
+            Token
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.AuditoriaResponse">
+            <summary>
+            Clase Entidad Lógica Auditoria
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.Estado">
+            <summary>
+            Estado A:Activo I:Inactivo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.EstadoRegistro">
+            <summary>
+            Estado 0:Eliminado 1:Activo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.FechaCreacion">
+            <summary>
+            Fecha Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.UsuarioCreacion">
+            <summary>
+            Usuario Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.TerminalCreacion">
+            <summary>
+            Terminal Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.FechaModificacion">
+            <summary>
+            Fecha Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.UsuarioModificacion">
+            <summary>
+            Usuario Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.AuditoriaResponse.TerminalModificacion">
+            <summary>
+            Terminal Modificacion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.BaseResponse">
+            <summary>
+            Clase BaseResponse
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.BaseResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.BaseResponse.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.BaseResponse.ErrorMessage">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.BaseResponseGeneric`1">
+            <summary>
+            Clase BaseResponseGeneric
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.BaseResponseGeneric`1.Data">
+            <summary>
+            Data
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse">
+            <summary>
+            Clase Modulo Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.DescripcionSeccion">
+            <summary>
+            Descripcion Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.Controlador">
+            <summary>
+            Controlador
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloDtoResponse.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse">
+            <summary>
+            Modulo Rol Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.CodigoModuloRolId">
+            <summary>
+            Codigo Modulo Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.CodigoModuloId">
+            <summary>
+            Codigo Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.DescripcionModulo">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.DescripcionSeccion">
+            <summary>
+            Descripcion Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.RolId">
+            <summary>
+            Rol Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.ModuloRolDtoResponse.DescripcionRol">
+            <summary>
+            Descripcion Rol
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse">
+            <summary>
+            Clase Seccion Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.CodigoSeccionId">
+            <summary>
+            Codigo Seccion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.Orden">
+            <summary>
+            Orden
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SeccionDtoResponse.ModuloLista">
+            <summary>
+            Modulo lista
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse">
+            <summary>
+            Clase Sistema Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.FotoModulo">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.Url">
+            <summary>
+            Url
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.Icono">
+            <summary>
+            Icono
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.Target">
+            <summary>
+            Target
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.UsarToken">
+            <summary>
+            Usar Token
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.SistemaDtoResponse.EnlaceInformativo">
+            <summary>
+            Enlace Informativo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse">
+            <summary>
+            Clase Usuario Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Servicio">
+            <summary>
+            Servicio
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Telefono2">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.TipoDocumentoIdentidadId">
+            <summary>
+            TipoDocumentoIdentidadId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.AbreviaturaTipoDocumentoIdentidad">
+            <summary>
+            Abreviatura Tipo Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.DocumentoIdentidad">
+            <summary>
+            Documento Identidad
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.UserName">
+            <summary>
+            UserName
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.PhoneNumber">
+            <summary>
+            PhoneNumber
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Clave">
+            <summary>
+            Clave
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.CodigoTipoNivelId">
+            <summary>
+            Codigo Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.DescripcionTipoNivel">
+            <summary>
+            Descripcion Tipo Nivel
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.ErrorMessage">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.Estado">
+            <summary>
+            Estado A:Activo I:Inactivo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.EstadoRegistro">
+            <summary>
+            Estado 0:Eliminado 1:Activo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.FechaCreacion">
+            <summary>
+            Fecha Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.UsuarioCreacion">
+            <summary>
+            Usuario Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.TerminalCreacion">
+            <summary>
+            Terminal Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.FechaModificacion">
+            <summary>
+            Fecha Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.UsuarioModificacion">
+            <summary>
+            Usuario Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioDtoResponse.TerminalModificacion">
+            <summary>
+            Terminal Modificacion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse">
+            <summary>
+            Usuario EESS Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.CodigoUsuarioEESSId">
+            <summary>
+            Codigo Usuario EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.DescripcionDIRIS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoResponse.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoResponse">
+            <summary>
+            Usuario Modul oDto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoResponse.CodigoUsuarioModuloId">
+            <summary>
+            Codigo Usuario Modulo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoResponse.DescripcionSeccion">
+            <summary>
+            Descripcion Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoResponse.DescripcionModulo">
+            <summary>
+            Descripcion Modulo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse">
+            <summary>
+            Clase Usuario Rol Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse.CodigoUsuarioRolId">
+            <summary>
+            Nombre Rol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse.RoleId">
+            <summary>
+            Role Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse.DescripcionRol">
+            <summary>
+            Descripcion Rol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse.CodigoSistemaId">
+            <summary>
+            Codigo Sistema Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoResponse.DescripcionSistema">
+            <summary>
+            Descripcion Sistema
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse">
+            <summary>
+            Clase Rol Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.ErrorMessage">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.Estado">
+            <summary>
+            Estado A:Activo I:Inactivo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.EstadoRegistro">
+            <summary>
+            Estado 0:Eliminado 1:Activo
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.FechaCreacion">
+            <summary>
+            Fecha Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.UsuarioCreacion">
+            <summary>
+            Usuario Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.TerminalCreacion">
+            <summary>
+            Terminal Creacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.FechaModificacion">
+            <summary>
+            Fecha Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.UsuarioModificacion">
+            <summary>
+            Usuario Modificacion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.Mantenimiento.RolDtoResponse.TerminalModificacion">
+            <summary>
+            Terminal Modificacion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.Segapp.TipoDocumentoIdentidadDtoResponse">
+            <summary>
+            Clase Tipo Documento Identidad DtoResponse
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.TipoDocumentoIdentidadDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Segapp.TipoDocumentoIdentidadDtoResponse.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Cargo.CargoDtoResponse">
+            <summary>
+            Cargo Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Cargo.CargoDtoResponse.CodigoCargoId">
+            <summary>
+            Codigo Cargo Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Cargo.CargoDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Cargo.CargoDtoResponse.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelDIRISDtoResponse">
+            <summary>
+            Clase Nivel DIRIS Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelDIRISDtoResponse.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelDIRISDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse">
+            <summary>
+            Clase Nivel EESS Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse.CodigoIPRESS">
+            <summary>
+            CodigoIPRESS
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelEESSDtoResponse.Categoria">
+            <summary>
+            Categoria
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelRISDtoResponse">
+            <summary>
+            Clase Nivel RIS Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelRISDtoResponse.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelRISDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.NivelRISDtoResponse.CodigoNivelDIRISId">
+            <summary>
+            Codigo Nivel DIRIS Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.TipoNivelDtoResponse">
+            <summary>
+            Tipo Nivel Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.TipoNivelDtoResponse.CodigoTipoNivelId">
+            <summary>
+            Codigo Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Nivel.TipoNivelDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse">
+            <summary>
+            Profesion Dto Response
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.CodigoProfesionalId" -->
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.Nombres">
+            <summary>
+            Nombres
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.ApellidoPaterno">
+            <summary>
+            Apellido Paterno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.ApellidoMaterno">
+            <summary>
+            Apellido Materno
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.Telefono">
+            <summary>
+            Telefono2
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.CodigoCargoId">
+            <summary>
+            CodigoCargoId
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesional.ProfesionalDtoResponse.CodigoProfesionId">
+            <summary>
+            Codigo Nivel Id
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Profesion.ProfesionDtoResponse">
+            <summary>
+            Profesion Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesion.ProfesionDtoResponse.CodigoProfesionId">
+            <summary>
+            Codigo Profesion Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesion.ProfesionDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Profesion.ProfesionDtoResponse.Abreviatura">
+            <summary>
+            Abreviatura
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoResponse">
+            <summary>
+            Clase Ubigeo Departamento Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoResponse.CodigoDepartamentoId">
+            <summary>
+            Codigo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDistritoDtoResponse">
+            <summary>
+            Clase Ubigeo Distrito Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDistritoDtoResponse.CodigoDistritoId">
+            <summary>
+            Codigo Distrito Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDistritoDtoResponse.CodigoProvinciaId">
+            <summary>
+            Codigo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoDistritoDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoProvinciaDtoResponse">
+            <summary>
+            Clase Ubigeo Provincia Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoProvinciaDtoResponse.CodigoProvinciaId">
+            <summary>
+            Codigo Provincia Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoProvinciaDtoResponse.CodigoDepartamentoId">
+            <summary>
+            Codigo Departamento Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.TablaMaestro.Ubigeo.UbigeoProvinciaDtoResponse.Descripcion">
+            <summary>
+            Descripcion
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse">
+            <summary>
+            Correo Credencial Dto Response
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse.CodigoCorreoCredencialId">
+            <summary>
+            Codigo Correo Credencial Id
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse.Clave">
+            <summary>
+            Clave
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse.Host">
+            <summary>
+            Host
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Models.Response.Util.CorreoCredencialDtoResponse.Puerto">
+            <summary>
+            Puerto
+            </summary>
+        </member>
+    </members>
+</doc>

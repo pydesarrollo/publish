@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.Services</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService">
+            <summary>
+            AccesoService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService.#ctor(Microsoft.AspNetCore.Identity.UserManager{DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Options.IOptions{DIRIS.Segapp.Common.AppConfiguration},DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext,DIRIS.Segapp.Repositories.Interfaces.Acceso.IAccesoRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="userManager"></param>
+            <param name="roleManager"></param>
+            <param name="options"></param>
+            <param name="SegappDbContext"></param>
+            <param name="accesoRepository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService.Login(DIRIS.Segapp.Models.Request.Acceso.LoginDtoRequest)">
+            <summary>
+            Service: Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService.SistemasPorUsuarioListar(System.String)">
+            <summary>
+            Service: Sistemas Por Usuario Listar
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService.LoginSistema(DIRIS.Segapp.Models.Request.Acceso.LoginSistemaDtoRequest)">
+            <summary>
+            Service: Login Sistema
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.AccesoService.GenerarToken(DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest)">
+            <summary>
+            Generar Token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.Acceso.MenuService">
+            <summary>
+            MenuService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.MenuService.#ctor(DIRIS.Segapp.Repositories.Interfaces.Acceso.IMenuRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="menuRepository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.MenuService.SeccionListar(DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Acceso.MenuService.ModuloListar(DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest)">
+            <summary>
+            Modulo Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.DatoNivelUsuarioService">
+            <summary>
+            Ubigeo Nivel EESS Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.DatoNivelUsuarioService.#ctor(DIRIS.Segapp.Repositories.Interfaces.Acceso.IDatoNivelUsuarioRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repositoryDatoUsuario"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.DatoNivelUsuarioService.UsuarioRISListar(DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest)">
+            <summary>
+            Service: Usuario RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.DatoNivelUsuarioService.UsuarioEESSListar(DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest)">
+            <summary>
+            Service: Usuario RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService">
+            <summary>
+            Nivel Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.#ctor(DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.ITipoNivelRepository,AutoMapper.IMapper,DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelDIRISRepository,DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelRISRepository,DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelEESSRepository)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repositoryTipoNivel"></param>
+            <param name="mapper"></param>
+            <param name="repositoryNivelDIRIS"></param>
+            <param name="repositoryNivelRIS"></param>
+            <param name="repositoryNivelEESS"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.TipoNivelListar">
+            <summary>
+            Service: Tipo Nivel Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.NivelDIRISListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelDIRISDtoRequest)">
+            <summary>
+            Service: Nivel DIRIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.NivelRISListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest)">
+            <summary>
+            Service: Nivel RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.NivelEESSListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest)">
+            <summary>
+            Service: Nivel EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Nivel.NivelService.HospitalListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest)">
+            <summary>
+            Service: Hospital Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Profesional.ProfesionalService">
+            <summary>
+            Usuario EESS Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Profesional.ProfesionalService.#ctor(DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.IProfesionalRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Profesional.ProfesionalService.ProfesionalListar(DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest)">
+            <summary>
+            Service: Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Profesional.ProfesionalService.ProfesionalInsertar(DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest)">
+            <summary>
+            Usuario EESS Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Profesional.ProfesionalService.ProfesionalEliminar(System.String)">
+            <summary>
+            Serivce: Usuario EESS Eliminar
+            </summary>
+            <param name="CodigoProfesionalId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadService">
+            <summary>
+            TipoDocumentoIdentidadService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadService.#ctor(DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.ITipoDocumentoIdentidadRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadService.TipoDocumentoIdentidadListar">
+            <summary>
+            Service: Tipo Documento Identidad Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Ubigeo.UbigeoService">
+            <summary>
+            Ubigeo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Ubigeo.UbigeoService.#ctor(DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDepartamentoRepository,AutoMapper.IMapper,DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoProvinciaRepository,DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDistritoRepository)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repositoryUbigeoDepartamento"></param>
+            <param name="mapper"></param>
+            <param name="repositoryUbigeoProvincia"></param>
+            <param name="repositoryUbigeoDistrito"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Ubigeo.UbigeoService.UbigeoDepartamentoListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoRequest)">
+            <summary>
+            Service: Ubigeo Departamento Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Ubigeo.UbigeoService.UbigeoProvinciaListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest)">
+            <summary>
+            Service: Provincia Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.TablaMaestra.Ubigeo.UbigeoService.UbigeoDistritoListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest)">
+            <summary>
+            Service: Distrito Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService">
+            <summary>
+            Modulo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.IModuloRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Modulo Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloListarPorSeccion(System.Int32)">
+            <summary>
+            Modulo Listar Por Seccion
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloObtenerMaxOrdenPorSeccion(System.Int32)">
+            <summary>
+            Modulo Obtener Max Orden Por Seccion
+            <param name="CodigoSeccionId"></param>
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Modulo Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloBuscarId(System.Int32)">
+            <summary>
+            Modulo Buscar Id
+            </summary>
+            <param name="CodigoModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Service: Modulo Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.ModuloService.ModuloEliminar(System.Int32)">
+            <summary>
+            Service: Modulo Eliminar
+            </summary>
+            <param name="CodigoModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService">
+            <summary>
+            Seccion Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISeccionRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Seccion Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionListarPorSistema(System.Int32)">
+            <summary>
+            Seccion Listar Por Sistema
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionObtenerMaxOrdenPorSistema(System.Int32)">
+            <summary>
+            Seccion Obtener Max Orden Por Sistema
+            <param name="CodigoSistemaId"></param>
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Seccion Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionBuscarId(System.Int32)">
+            <summary>
+            Seccion Buscar Id
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Service: Seccion Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SeccionService.SeccionEliminar(System.Int32)">
+            <summary>
+            Service: Seccion Eliminar
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService">
+            <summary>
+            SistemaService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISistemaRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.SistemaListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Service: Sistema
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.SistemaInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Sistema Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.SistemaBuscarId(System.Int32)">
+            <summary>
+            Sistema Buscar Id
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.SistemaActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Sistema Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.SistemaService.SistemaEliminar(System.Int32)">
+            <summary>
+            Sistema Eliminar
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSService">
+            <summary>
+            Usuario EESS Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSService.UsuarioEESSListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest)">
+            <summary>
+            Service: Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSService.UsuarioEESSInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest)">
+            <summary>
+            Usuario EESS Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSService.UsuarioEESSEliminar(System.Int32)">
+            <summary>
+            Serivce: Usuario EESS Eliminar
+            </summary>
+            <param name="CodigoUsuarioEESSId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloService">
+            <summary>
+            Usuario Modulo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloRepository,AutoMapper.IMapper,DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+            <param name="SegappDbContext"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloService.UsuarioModuloListar(System.String)">
+            <summary>
+            Service: Usuario Modulo Listar
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloService.UsuarioModuloInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest)">
+            <summary>
+            Usuario Modulo Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloService.UsuarioModuloEliminar(System.Int32)">
+            <summary>
+            Serivce: Usuario Modulo Eliminar
+            </summary>
+            <param name="CodigoUsuarioModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolService">
+            <summary>
+            Usuario Rol Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolService.UsuarioRolListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest)">
+            <summary>
+            Service: Usuario Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolService.UsuarioRolInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest)">
+            <summary>
+            Usuario Rol Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolService.UsuarioRolEliminar(System.Int32)">
+            <summary>
+            Service: Usuario Rol Eliminar
+            </summary>
+            <param name="CodigoUsuarioRolId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService">
+            <summary>
+            UsuarioService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.#ctor(DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRepository,AutoMapper.IMapper,Microsoft.AspNetCore.Identity.UserManager{DIRIS.Segapp.Entities.Entidades.DIRISIdentity.DIRISIdentityUser})">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+            <param name="userManager"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Service: Usuario Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioBuscarId(System.String)">
+            <summary>
+            Service: Usuario Buscar Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioValidar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Service: Usuario Validar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.QuitarTildes(System.String)">
+            <summary>
+            Quitar tildes
+            </summary>
+            <param name="texto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Service: Usuario Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Service: Usuario Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioEliminar(System.String)">
+            <summary>
+            Serivce: Usuario Eliminar
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioService.UsuarioActualizarClave(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Serivce: Usuario Actualizar Clave
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService">
+            <summary>
+            RolService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.#ctor(DIRIS.Segapp.Repositories.Interfaces.Segapp.Mantenimiento.IRolRepository,AutoMapper.IMapper,Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole})">
+            <summary>
+            Rol Service
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+            <param name="roleManager"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolListar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            Service: Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolBuscarId(System.String)">
+            <summary>
+            Service: Rol Buscar Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolInsertar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            Service: Rol Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolActualizar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            Service: Rol Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolEliminar(System.String)">
+            <summary>
+            Serivce: Rol Eliminar
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Segapp.Mantenimiento.RolService.RolPorSistemaListar(System.Int32)">
+            <summary>
+            Service: Rol Por Sistema Listar
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Implementaciones.Util.CorreoCredencialService">
+            <summary>
+            Correo Credencial Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Util.CorreoCredencialService.#ctor(DIRIS.Segapp.Repositories.Interfaces.Util.ICorreoCredencialRepository,AutoMapper.IMapper)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Implementaciones.Util.CorreoCredencialService.ObtenerCorreoCredencial">
+            <summary>
+            Service: Obtener Correo Credencial
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.Acceso.IAccesoService">
+            <summary>
+            IAccesoService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IAccesoService.Login(DIRIS.Segapp.Models.Request.Acceso.LoginDtoRequest)">
+            <summary>
+            IService: Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IAccesoService.SistemasPorUsuarioListar(System.String)">
+            <summary>
+            IService: Sistemas Por Usuario Listar
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IAccesoService.LoginSistema(DIRIS.Segapp.Models.Request.Acceso.LoginSistemaDtoRequest)">
+            <summary>
+            IService: Login Sistema
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IAccesoService.GenerarToken(DIRIS.Segapp.Models.Request.Acceso.TokenDtoRequest)">
+            <summary>
+            IService: Generar Token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.Acceso.IDatoNivelUsuarioService">
+            <summary>
+            IDatos Usuario Sistema Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IDatoNivelUsuarioService.UsuarioRISListar(DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest)">
+            <summary>
+            IService: Usuario RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IDatoNivelUsuarioService.UsuarioEESSListar(DIRIS.Segapp.Models.Request.Acceso.DatoNivelUsuarioDtoRequest)">
+            <summary>
+            IService: Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.Acceso.IMenuService">
+            <summary>
+            IMenuService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IMenuService.SeccionListar(DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest)">
+            <summary>
+            Seccion Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Acceso.IMenuService.ModuloListar(DIRIS.Segapp.Models.Request.Acceso.MenuDtoRequest)">
+            <summary>
+            Modulo Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService">
+            <summary>
+            IModulo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Modulo Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloListarPorSeccion(System.Int32)">
+            <summary>
+            Modulo Listar Por Seccion
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloObtenerMaxOrdenPorSeccion(System.Int32)">
+            <summary>
+            Modulo Obtener Max Orden Por Seccion
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Modulo Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloBuscarId(System.Int32)">
+            <summary>
+            Modulo Buscar Id
+            </summary>
+            <param name="CodigoModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.ModuloDtoRequest)">
+            <summary>
+            Modulo Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.IModuloService.ModuloEliminar(System.Int32)">
+            <summary>
+            Modulo Eliminar
+            </summary>
+            <param name="CodigoModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService">
+            <summary>
+            ISeccion Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Seccion Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionListarPorSistema(System.Int32)">
+            <summary>
+            Seccion Listar Por Sistema
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionObtenerMaxOrdenPorSistema(System.Int32)">
+            <summary>
+            Seccion Obtener Max Orden Por Sistema
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Seccion Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionBuscarId(System.Int32)">
+            <summary>
+            Seccion Buscar Id
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SeccionDtoRequest)">
+            <summary>
+            Seccion Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISeccionService.SeccionEliminar(System.Int32)">
+            <summary>
+            Seccion Eliminar
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService">
+            <summary>
+            ISistemaService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService.SistemaListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Sistema Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService.SistemaInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Sistema Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService.SistemaBuscarId(System.Int32)">
+            <summary>
+            Sistema Buscar Id
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService.SistemaActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.SistemaDtoRequest)">
+            <summary>
+            Sistema Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.ISistemaService.SistemaEliminar(System.Int32)">
+            <summary>
+            Sistema Eliminar
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSService">
+            <summary>
+            IUsuario EESS Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSService.UsuarioEESSListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest)">
+            <summary>
+            Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSService.UsuarioEESSInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioEESSDtoRequest)">
+            <summary>
+            Usuario EESS Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSService.UsuarioEESSEliminar(System.Int32)">
+            <summary>
+            IService: Usuario EESS Eliminar
+            </summary>
+            <param name="CodigoUsuarioEESSId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloService">
+            <summary>
+            IUsuario Modulo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloService.UsuarioModuloListar(System.String)">
+            <summary>
+            Usuario Modulo Listar
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloService.UsuarioModuloInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioModuloDtoRequest)">
+            <summary>
+            Usuario Modulo Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloService.UsuarioModuloEliminar(System.Int32)">
+            <summary>
+            IService: Usuario Modulo Eliminar
+            </summary>
+            <param name="CodigoUsuarioModuloId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolService">
+            <summary>
+            IUsuario Rol Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolService.UsuarioRolListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest)">
+            <summary>
+            Usuario Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolService.UsuarioRolInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioRolDtoRequest)">
+            <summary>
+            Usuario Rol Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolService.UsuarioRolEliminar(System.Int32)">
+            <summary>
+            Usuario Rol Eliminar
+            </summary>
+            <param name="CodigoUsuarioRolId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService">
+            <summary>
+            IUsuarioService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioListar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            Usuario Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioBuscarId(System.String)">
+            <summary>
+            IService: Usuario Buscar Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioValidar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            IService: Usuario Validar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioInsertar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            IService: Usuario Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioActualizar(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            IService: Usuario Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioEliminar(System.String)">
+            <summary>
+            IService: Usuario Eliminar
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioService.UsuarioActualizarClave(DIRIS.Segapp.Models.Request.SegApp.Mantenimiento.Usuarios.UsuarioDtoRequest)">
+            <summary>
+            IService: Usuario Actualizar clave
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService">
+            <summary>
+            IRolService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolListar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolBuscarId(System.String)">
+            <summary>
+            IService: Rol Buscar Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolInsertar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            IService: Rol Insertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolActualizar(DIRIS.Segapp.Models.Request.Segapp.Mantenimiento.RolDtoRequest)">
+            <summary>
+            IService: Rol Actualizar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolEliminar(System.String)">
+            <summary>
+            IService: Rol Eliminar
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Segapp.Mantenimiento.IRolService.RolPorSistemaListar(System.Int32)">
+            <summary>
+            Rol Por Sistema Listar
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService">
+            <summary>
+            INivel Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService.TipoNivelListar">
+            <summary>
+            Tipo Nivel Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService.NivelDIRISListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelDIRISDtoRequest)">
+            <summary>
+            Nivel DIRIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService.NivelRISListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelRISDtoRequest)">
+            <summary>
+            Nivel RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService.NivelEESSListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest)">
+            <summary>
+            Nivel EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Nivel.INivelService.HospitalListar(DIRIS.Segapp.Models.Request.TablaMaestro.Nivel.NivelEESSDtoRequest)">
+            <summary>
+            Nivel Hospital Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Profesional.IProfesionalService">
+            <summary>
+            IProfesional Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Profesional.IProfesionalService.ProfesionalListar(DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest)">
+            <summary>
+            IService: ProfesionalListar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Profesional.IProfesionalService.ProfesionalInsertar(DIRIS.Segapp.Models.Request.TablaMaestro.Profesional.ProfesionalDtoRequest)">
+            <summary>
+            IService ProfesionalInsertar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Profesional.IProfesionalService.ProfesionalEliminar(System.String)">
+            <summary>
+            IService: ProfesionalEliminar
+            </summary>
+            <param name="CodigoProfesionalId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.TablaMaestra.TiposDocumentoIdentidad.ITipoDocumentoIdentidadService">
+            <summary>
+            ITipoDocumentoIdentidadService
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.TiposDocumentoIdentidad.ITipoDocumentoIdentidadService.TipoDocumentoIdentidadListar">
+            <summary>
+            Tipo Documento Identidad Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Ubigeo.IUbigeoService">
+            <summary>
+            IUbigeo Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Ubigeo.IUbigeoService.UbigeoDepartamentoListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDepartamentoDtoRequest)">
+            <summary>
+            Ubigeo Departamento Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Ubigeo.IUbigeoService.UbigeoProvinciaListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoProvinciaDtoRequest)">
+            <summary>
+            Provincia Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.TablaMaestra.Ubigeo.IUbigeoService.UbigeoDistritoListar(DIRIS.Segapp.Models.Request.TablaMaestro.Ubigeo.UbigeoDistritoDtoRequest)">
+            <summary>
+            Distrito Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Interfaces.Util.ICorreoCredencialService">
+            <summary>
+            ICorreo Credencial Service
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Interfaces.Util.ICorreoCredencialService.ObtenerCorreoCredencial">
+            <summary>
+            IService: Obtener Correo Credencial
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Profiles.DIRISSegappProfile">
+            <summary>
+            Clase Profile
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Services.Profiles.DIRISSegappProfile.#ctor">
+            <summary>
+            Credor de AutoMapper - Map
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Services.Resources.ResourceGeneral">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.DuplicateEmail">
+            <summary>
+              Busca una cadena traducida similar a El correo ya está en uso o eliminado.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.DuplicateUserName">
+            <summary>
+              Busca una cadena traducida similar a El usuario ya está en uso o eliminado.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.InvalidEmail">
+            <summary>
+              Busca una cadena traducida similar a El correo ingresado no tiene el formato válido.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.PasswordRequiresDigit">
+            <summary>
+              Busca una cadena traducida similar a La contraseña debe tener al menos un dígito (&apos;0&apos;-&apos;9&apos;).
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.PasswordRequiresLower">
+            <summary>
+              Busca una cadena traducida similar a Las contraseñas deben tener al menos una minúscula (&apos;a&apos;-&apos;z&apos;).
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.PasswordTooShort">
+            <summary>
+              Busca una cadena traducida similar a La contraseña debe tener al menos 6 caracteres.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.UserNotFound">
+            <summary>
+              Busca una cadena traducida similar a Usuario no encontrado.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.UsuarioRolDuplicado">
+            <summary>
+              Busca una cadena traducida similar a El usuario ya cuenta con un rol definido en el sistema indicado.
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Services.Resources.ResourceGeneral.UsuarioRolSitemaDuplicado">
+            <summary>
+              Busca una cadena traducida similar a El usuario ya cuenta con el rol seleccionado en el sistema indicado.
+            </summary>
+        </member>
+    </members>
+</doc>

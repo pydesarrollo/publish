@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.Repositories</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Acceso.AccesoRepository">
+            <summary>
+            Acceso Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.AccesoRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.AccesoRepository.SistemasPorUsuarioListar(System.String)">
+            <summary>
+            Sistema Listar Por Usuario
+            <param name="CodigoUsuarioId"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Acceso.DatoNivelUsuarioRepository">
+            <summary>
+            Dato Usuario Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.DatoNivelUsuarioRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.DatoNivelUsuarioRepository.UsuarioRISListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            Repository: Usuario RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.DatoNivelUsuarioRepository.UsuarioEESSListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            Repository: Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Acceso.MenuRepository">
+            <summary>
+            Menu Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.MenuRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.MenuRepository.SeccionListar(DIRIS.Segapp.Entities.Entidades.Acceso.Menu)">
+            <summary>
+            Seccion Listar
+            <param name="request"></param>
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Acceso.MenuRepository.ModuloListar(DIRIS.Segapp.Entities.Entidades.Acceso.Menu)">
+            <summary>
+            Modulo Listar
+            <param name="request"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1">
+            <summary>
+            Repositorio Base - Métodos Basicos
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="F:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Context">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Repository Base
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Listar
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            Listar con predicado
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="relationships"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.BuscarId(System.Int32)">
+            <summary>
+            Buscar por ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Insertar(`0)">
+            <summary>
+            Repository: Agregar - Registrar Nuevo Item - Registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Actualizar">
+            <summary>
+            Actualizar Registro - Item
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Eliminar(System.Int32)">
+            <summary>
+            Eliminar Registro - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="selector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBase`1.ObtenerIdGenerado(`0)">
+            <summary>
+            Obtener Id Generado
+            <param name="entity"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1">
+            <summary>
+            Repositorio Base Segapp - Métodos Basicos
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="F:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Context">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Repository: Listar
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            Repository: Listar con predicado
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="relationships"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Repository: Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="selector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Repository: Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.BuscarId(System.Int32)">
+            <summary>
+            Repository: Buscar por ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.BuscarStringId(System.String)">
+            <summary>
+            Repository: Buscar por ID string
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Insertar(`0)">
+            <summary>
+            Repository: Agregar - Registrar Nuevo Item - Registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Actualizar">
+            <summary>
+            Repository: Actualizar Registro - Item
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegapp`1.Eliminar(System.Int32)">
+            <summary>
+            Repository: Eliminar Registro - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1">
+            <summary>
+            Repositorio Base Segapp EF - Métodos Basicos
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="F:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Context">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Repository: Listar
+            </summary>
+            <param name="predicate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            Repository: Listar con predicado
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="relationships"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Repository: Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <param name="selector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Repository: Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.BuscarId(System.Int32)">
+            <summary>
+            Repository: Buscar por ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.BuscarStringId(System.String)">
+            <summary>
+            Repository: Buscar por ID string
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Insertar(`0)">
+            <summary>
+            Repository: Agregar - Registrar Nuevo Item - Registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Actualizar">
+            <summary>
+            Repository: Actualizar Registro - Item
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.ActualizarCampos(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Action{`0})">
+            <summary>
+            Repository: Actualizar determinados campos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.Eliminar(System.Int32)">
+            <summary>
+            Repository: Eliminar Registro - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.EliminarString(System.String)">
+            <summary>
+            Repository: Eliminar Registro (string) - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Base.RepositoryBaseSegappEF`1.EliminarRegistroString(System.String)">
+            <summary>
+            Repository: Eliminar Registro (string) - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.ModuloRepository">
+            <summary>
+            Seccion Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.ModuloRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.ModuloRepository.ModuloListar(DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo)">
+            <summary>
+            Repository: Modulo Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.ModuloRepository.ModuloListarPorSeccion(System.Int32)">
+            <summary>
+            Modulo Listar Por Seccion
+            <param name="CodigoSeccionId"></param>
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.ModuloRepository.ModuloObtenerMaxOrdenPorSeccion(System.Int32)">
+            <summary>
+            Seccion Obtener Max Orden Por Seccion
+            <param name="CodigoSeccionId"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SeccionRepository">
+            <summary>
+            Seccion Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SeccionRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SeccionRepository.SeccionListar(DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion)">
+            <summary>
+            Repository: Seccion Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SeccionRepository.SeccionListarPorSistema(System.Int32)">
+            <summary>
+            Seccion Listar Por Sistema
+            <param name="CodigoSistemaId"></param>
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SeccionRepository.SeccionObtenerMaxOrdenPorSistema(System.Int32)">
+            <summary>
+            Seccion Obtener Max Orden Por Sistema
+            <param name="CodigoSistemaId"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SistemaRepository">
+            <summary>
+            Sistema Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SistemaRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.SistemaRepository.SistemaListar(DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema)">
+            <summary>
+            Repository: Sistema Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSRepository">
+            <summary>
+            Usuario EESS Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSRepository.UsuarioEESSListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            Repository: Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioEESSRepository.UsuarioEESSInsertar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            IRepository: Usuario EESS Insertar
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloRepository">
+            <summary>
+            Usuario Modulo Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloRepository.UsuarioModuloListar(System.String)">
+            <summary>
+            Repository: Usuario Modulo Listar
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioModuloRepository.UsuarioModuloInsertar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo)">
+            <summary>
+            IRepository: Usuario Modulo Insertar
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRepository">
+            <summary>
+            UsuarioRepository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRepository.UsuarioListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario)">
+            <summary>
+            Repository: Usuario Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolRepository">
+            <summary>
+            Usuario Rol Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.SegApp.Mantenimiento.Usuarios.UsuarioRolRepository.UsuarioRolListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol)">
+            <summary>
+            Repository: Usuario Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Segapp.Mantenimiento.RolRepository">
+            <summary>
+            Rol Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Segapp.Mantenimiento.RolRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Segapp.Mantenimiento.RolRepository.RolListar(DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol)">
+            <summary>
+            Repository: Rol Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Segapp.Mantenimiento.RolRepository.RolPorSistemaListar(System.Int32)">
+            <summary>
+            Rol Por Sistema Listar
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelDIRISRepository">
+            <summary>
+            Ubigeo Distrito Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelDIRISRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelDIRISRepository.NivelDIRISListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelDIRIS)">
+            <summary>
+            Repository: Nivel DIRIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelEESSRepository">
+            <summary>
+            Ubigeo Distrito Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelEESSRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelEESSRepository.NivelEESSListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS)">
+            <summary>
+            Repository: Nivel EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelEESSRepository.HospitalListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS)">
+            <summary>
+            Repository: Hospital Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelRISRepository">
+            <summary>
+            Ubigeo Distrito Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelRISRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.NivelRISRepository.NivelRISListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS)">
+            <summary>
+            Repository: Nivel RIS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.TipoNivelRepository">
+            <summary>
+            Tipo Nivel Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.TipoNivelRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Nivel.TipoNivelRepository.TipoNivelListar">
+            <summary>
+            Repository: Tipo Nivel Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.ProfesionalRepository">
+            <summary>
+            ProfesionalRepository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.ProfesionalRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.ProfesionalRepository.ProfesionalListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional)">
+            <summary>
+            Repository: ProfesionalListar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadRepository">
+            <summary>
+            TipoDocumentoIdentidadRepository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.TiposDocumentoIdentidad.TipoDocumentoIdentidadRepository.TipoDocumentoIdentidadListar">
+            <summary>
+            Repository: Tipo Documento Identidad Listar
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDepartamentoRepository">
+            <summary>
+            Ubigeo Departamento Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDepartamentoRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDepartamentoRepository.UbigeoDepartamentoListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDepartamento)">
+            <summary>
+            Repository: Ubigeo Departamento Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDistritoRepository">
+            <summary>
+            Ubigeo Distrito Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDistritoRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoDistritoRepository.UbigeoDistritoListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito)">
+            <summary>
+            Repository: Ubigeo Distrito Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoProvinciaRepository">
+            <summary>
+            Ubigeo Provincia Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoProvinciaRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.TablaMaestra.Ubigeo.UbigeoProvinciaRepository.UbigeoProvinciaListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia)">
+            <summary>
+            Repository: Ubigeo Provincia Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Implementaciones.Util.CorreoCredencialRepository">
+            <summary>
+            Correo Credencial Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Implementaciones.Util.CorreoCredencialRepository.#ctor(DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF)">
+            <summary>
+            Instanciar
+            <param name="context"></param>
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Acceso.IAccesoRepository">
+            <summary>
+            IAcceso Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Acceso.IAccesoRepository.SistemasPorUsuarioListar(System.String)">
+            <summary>
+            Sistema Listar Por Usuario
+            </summary>
+            <param name="CodigoUsuarioId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Acceso.IDatoNivelUsuarioRepository">
+            <summary>
+            Interface Dato Usuario Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Acceso.IDatoNivelUsuarioRepository.UsuarioRISListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            IRepository: Usuario RIS Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Acceso.IDatoNivelUsuarioRepository.UsuarioEESSListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            IRepository Usuario EESS Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Acceso.IMenuRepository">
+            <summary>
+            Interface Repository Menu
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Acceso.IMenuRepository.SeccionListar(DIRIS.Segapp.Entities.Entidades.Acceso.Menu)">
+            <summary>
+            Seccion Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Acceso.IMenuRepository.ModuloListar(DIRIS.Segapp.Entities.Entidades.Acceso.Menu)">
+            <summary>
+            Modulo Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1">
+            <summary>
+            Interface de Repositorio Base
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            Listar objetos basados en el EntityBase
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            Lista de objetos del EntityBase con un selector
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            Lista de objetos del EntityBase con un selector y sin predicado
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Insertar(`0)">
+            <summary>
+            IRepository: Insertar un nuevo registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.BuscarId(System.Int32)">
+            <summary>
+            Buscar un registro por ID
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Actualizar">
+            <summary>
+            Actualizar cambios en la BD
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.Eliminar(System.Int32)">
+            <summary>
+            Eliminar un registro de la BD
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBase`1.ObtenerIdGenerado(`0)">
+            <summary>
+            Obtener el id generado
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1">
+            <summary>
+            Interface de Repositorio Base Segapp
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            IRepository: Listar objetos basados en el EntityBase
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            IRepository: Lista de objetos del EntityBase con un selector
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            IRepository: Lista de objetos del EntityBase con un selector y sin predicado
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Insertar(`0)">
+            <summary>
+            IRepository: Insertar un nuevo registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.BuscarId(System.Int32)">
+            <summary>
+            IRepository: Buscar un registro por ID
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.BuscarStringId(System.String)">
+            <summary>
+            IRepository: Buscar un registro por ID
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Actualizar">
+            <summary>
+            IRepository: Actualizar cambios en la BD
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegapp`1.Eliminar(System.Int32)">
+            <summary>
+            IRepository: Eliminar un registro de la BD
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1">
+            <summary>
+            Interface de Repositorio Base
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Listar(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            IRepository: Listar objetos basados en el EntityBase
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.String)">
+            <summary>
+            IRepository: Lista de objetos del EntityBase con un selector
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Listar``2(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.String,System.Int32,System.Int32)">
+            <summary>
+            Listar
+            </summary>
+            <typeparam name="TInfo"></typeparam>
+            <typeparam name="TKey"></typeparam>
+            <param name="predicate"></param>
+            <param name="selector"></param>
+            <param name="orderBy"></param>
+            <param name="relationships"></param>
+            <param name="page"></param>
+            <param name="rows"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Listar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            IRepository: Lista de objetos del EntityBase con un selector y sin predicado
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Insertar(`0)">
+            <summary>
+            IRepository: Insertar un nuevo registro
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.BuscarId(System.Int32)">
+            <summary>
+            IRepository: Buscar un registro por ID
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.BuscarStringId(System.String)">
+            <summary>
+            IRepository: Buscar un registro por ID
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Actualizar">
+            <summary>
+            IRepository: Actualizar cambios en la BD
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.ActualizarCampos(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Action{`0})">
+            <summary>
+            IRepository: Actualizar ciertos campos
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.Eliminar(System.Int32)">
+            <summary>
+            IRepository: Eliminar un registro de la BD
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.EliminarString(System.String)">
+            <summary>
+            IRepository: Eliminar un registro de la BD por Id string
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Base.IRepositoryBaseSegappEF`1.EliminarRegistroString(System.String)">
+            <summary>
+            Repository: Eliminar Registro (string) - Item
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.IModuloRepository">
+            <summary>
+            Interface de Metodos Modulo
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.IModuloRepository.ModuloListar(DIRIS.Segapp.Entities.Entidades.Modulos.SEG_Modulo)">
+            <summary>
+            IRepository: Modulo Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.IModuloRepository.ModuloListarPorSeccion(System.Int32)">
+            <summary>
+            Modulo Listar Por Seccion
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.IModuloRepository.ModuloObtenerMaxOrdenPorSeccion(System.Int32)">
+            <summary>
+            Modulo Obtener Max Orden Por Seccion
+            </summary>
+            <param name="CodigoSeccionId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISeccionRepository">
+            <summary>
+            Interface de Metodos Seccion
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISeccionRepository.SeccionListar(DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion)">
+            <summary>
+            IRepository: Seccion Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISeccionRepository.SeccionListarPorSistema(System.Int32)">
+            <summary>
+            Seccion Listar Por Sistema
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISeccionRepository.SeccionObtenerMaxOrdenPorSistema(System.Int32)">
+            <summary>
+            Seccion Obtener Max Orden Por Sistema
+            </summary>
+            <param name="CodigoSistemaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISistemaRepository">
+            <summary>
+            Interface Repository Sistema
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.ISistemaRepository.SistemaListar(DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema)">
+            <summary>
+            IRepository: Sistema
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSRepository">
+            <summary>
+            IUsuario EESS Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSRepository.UsuarioEESSListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            IRepository: Usuario EESS Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioEESSRepository.UsuarioEESSInsertar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioEESS)">
+            <summary>
+            IRepository: Usuario EESS Insertar
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloRepository">
+            <summary>
+            Interface: IUsuario Modulo Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloRepository.UsuarioModuloListar(System.String)">
+            <summary>
+            IRepository: Usuario Modulo Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioModuloRepository.UsuarioModuloInsertar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioModulo)">
+            <summary>
+            IRepository: Usuario Modulo Insertar
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRepository">
+            <summary>
+            Interface de Metodos Usuario
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRepository.UsuarioListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario)">
+            <summary>
+            IRepository: Usuario Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolRepository">
+            <summary>
+            IUsuario Rol Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.SegApp.Mantenimiento.Usuarios.IUsuarioRolRepository.UsuarioRolListar(DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol)">
+            <summary>
+            IRepository: Usuario Rol Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Segapp.Mantenimiento.IRolRepository">
+            <summary>
+            Interface de Metodos Rol
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Segapp.Mantenimiento.IRolRepository.RolListar(DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol)">
+            <summary>
+            IRepository: Rol Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.Segapp.Mantenimiento.IRolRepository.RolPorSistemaListar(System.Int32)">
+            <summary>
+            IRepository: Rol Por Sistema Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelDIRISRepository">
+            <summary>
+            Interface de Metodos Nivel DIRIS
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelDIRISRepository.NivelDIRISListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelDIRIS)">
+            <summary>
+            IRepository: Nivel DIRIS Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelEESSRepository">
+            <summary>
+            Interface de Metodos Nivel EESS
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelEESSRepository.NivelEESSListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS)">
+            <summary>
+            IRepository: Nivel EESS Listar
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelEESSRepository.HospitalListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelEESS)">
+            <summary>
+            IRepository: Hospital Listar
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelRISRepository">
+            <summary>
+            Interface de Metodos Nivel RIS
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.INivelRISRepository.NivelRISListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Nivel.TM_NivelRIS)">
+            <summary>
+            IRepository: Nivel RIS Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.ITipoNivelRepository">
+            <summary>
+            ITipo Nivel Repository
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Nivel.ITipoNivelRepository.TipoNivelListar">
+            <summary>
+            IRepository: Tipo Nivel Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.IProfesionalRepository">
+            <summary>
+            Interface de Metodos Profesional
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.IProfesionalRepository.ProfesionalListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Profesional.TM_Profesional)">
+            <summary>
+            IRepository: ProfesionalListar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.ITipoDocumentoIdentidadRepository">
+            <summary>
+            Interface de Metodos TipoDocumentoIdentidad
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.TiposDocumentoIdentidad.ITipoDocumentoIdentidadRepository.TipoDocumentoIdentidadListar">
+            <summary>
+            IRepository: Tipo Documento Identidad Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDepartamentoRepository">
+            <summary>
+            Interface de Metodos Ubigeo Departamento
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDepartamentoRepository.UbigeoDepartamentoListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDepartamento)">
+            <summary>
+            IRepository: Ubigeo Departamento Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDistritoRepository">
+            <summary>
+            Interface de Metodos Ubigeo Distrito
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoDistritoRepository.UbigeoDistritoListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoDistrito)">
+            <summary>
+            IRepository: Ubigeo Distrito Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoProvinciaRepository">
+            <summary>
+            Interface de Metodos Ubigeo Provincia
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.Repositories.Interfaces.TablaMaestra.Ubigeo.IUbigeoProvinciaRepository.UbigeoProvinciaListar(DIRIS.Segapp.Entities.Entidades.TablaMaestra.Ubigeo.TM_UbigeoProvincia)">
+            <summary>
+            IRepository: Ubigeo Provincia Listar
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Repositories.Interfaces.Util.ICorreoCredencialRepository">
+            <summary>
+            ICorreo Credencial Repository
+            </summary>
+        </member>
+    </members>
+</doc>

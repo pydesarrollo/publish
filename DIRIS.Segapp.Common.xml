@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.Common</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.Common.AppConfiguration">
+            <summary>
+            AppConfiguration
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Common.AppConfiguration.Jwt">
+            <summary>
+            Variable Jwt
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Jwt">
+            <summary>
+            Clase Jwt
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Common.Jwt.SecretKey">
+            <summary>
+            SecretKey
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Common.Jwt.Audiencia">
+            <summary>
+            Audiencia
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.Common.Jwt.Emisor">
+            <summary>
+            Emisor
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Constantes">
+            <summary>
+            Constantes Backend
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.JwtToken">
+            <summary>
+            JwtToken
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoSistemaIdFijo">
+            <summary>
+            Codigo Sistema Id Fijo
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.MenuDinamico">
+            <summary>
+            Menu Dinamico
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoUsuarioId">
+            <summary>
+            Usuario Id
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.Usuario">
+            <summary>
+            Usuario
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.NombreUsuario">
+            <summary>
+            Nombre Usuario
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoSistemaIdUsuario">
+            <summary>
+            Codigo Sistema Id Usuario
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.NombreRolUsuario">
+            <summary>
+            Nombre Rol Usuario
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.FechaVencimiento">
+            <summary>
+            Fecha Vencimiento
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoTipoNivelId">
+            <summary>
+            Codigo Tipo Nivel Id
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.DescripcionTipoNivel">
+            <summary>
+            Descripcion Tipo Nivel
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoNivelRISId">
+            <summary>
+            Codigo Nivel RIS Id
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.DescripcionRIS">
+            <summary>
+            Descripcion RIS
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoNivelEESSId">
+            <summary>
+            Codigo Nivel EESS Id
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.DescripcionEESS">
+            <summary>
+            Descripcion EESS
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.CodigoTipoEESSId">
+            <summary>
+            Codigo Tipo EESS Id
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.DescripcionTipoEESS">
+            <summary>
+            Descripcion Tipo EESS
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.RolAdminSistemas">
+            <summary>
+            Rol Admin Sistemas
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.RolJefe">
+            <summary>
+            Rol Jefe
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.RolSupervisor">
+            <summary>
+            Rol Supervisor
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Constantes.RolUsuario">
+            <summary>
+            Rol Usuario
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Enumerado">
+            <summary>
+            Variables - Constantes - Enumerado - FrontEnd
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Enumerado.Estado">
+            <summary>
+            Constantes Estado
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.Estado.Activo">
+            <summary>
+            Activo
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.Estado.Inactivo">
+            <summary>
+            Inactivo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Enumerado.EstadoRegistro">
+            <summary>
+            Constantes Estado
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.EstadoRegistro.Activo">
+            <summary>
+            Activo
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.EstadoRegistro.Inactivo">
+            <summary>
+            Inactivo
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.Common.Enumerado.TipoEESS">
+            <summary>
+            Constantes Tipo EESS
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.Hospital">
+            <summary>
+            Hospital
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.CentroSalud">
+            <summary>
+            Centro Salud
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.PuestoSalud">
+            <summary>
+            Puesto Salud
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.CentroSaludMental">
+            <summary>
+            Centro Salud Mental
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.SMA">
+            <summary>
+            SMA
+            </summary>
+        </member>
+        <member name="F:DIRIS.Segapp.Common.Enumerado.TipoEESS.CentroRehabilitacion">
+            <summary>
+            Centro Rehabilitacion
+            </summary>
+        </member>
+    </members>
+</doc>

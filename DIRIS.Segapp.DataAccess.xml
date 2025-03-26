@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIRIS.Segapp.DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.RolConfiguration">
+            <summary>
+            Configuracion de Tabla Rol
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.RolConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.Roles.SEG_Rol})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.SeccionConfiguration">
+            <summary>
+            Configuracion de Tabla Seccion
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.SeccionConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.Secciones.SEG_Seccion})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.SistemaConfiguration">
+            <summary>
+            Configuracion de Tabla Sistema
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.SistemaConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.Sistemas.SEG_Sistema})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.TipoDocumentoIdentidadConfiguration">
+            <summary>
+            Configuracion de Tabla Tipo Documento Identidad
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.TipoDocumentoIdentidadConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.TablaMaestra.TiposDocumentoIdentidad.TM_TipoDocumentoIdentidad})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.UsuarioConfiguration">
+            <summary>
+            Configuracion de Tabla Usuario
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.UsuarioConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_Usuario})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.UsuarioRolConfiguration">
+            <summary>
+            Configuracion de Tabla Usuario Rol
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Mantenimiento.UsuarioRolConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Entidades.Usuarios.SEG_UsuarioRol})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Configurations.Util.CorreoCredencialConfiguration">
+            <summary>
+            Configuracion de Correo Credencial
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Configurations.Util.CorreoCredencialConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{DIRIS.Segapp.Entities.Util.CorreoCredencial})">
+            <summary>
+            Seteo de Parametros
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext">
+            <summary>
+            SegappDbContext
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext})">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.DIRISIdentityUsuarioRol">
+            <summary>
+            DIRISIdentityUsuarioRol
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.Sistema">
+            <summary>
+            Sistema
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.Seccion">
+            <summary>
+            Seccion
+            </summary>
+        </member>
+        <member name="P:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.Modulo">
+            <summary>
+            Modulo
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnModelCreating
+            </summary>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF">
+            <summary>
+            SegappDbContextEF
+            </summary>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF})">
+            <summary>
+            Instanciar
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.DbContexts.SegappDbContextEF.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnModelCreating
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.Migrations.MigracionRol">
+            <inheritdoc />
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Migrations.MigracionRol.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Migrations.MigracionRol.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DIRIS.Segapp.DataAccess.Migrations.MigracionRol.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:DIRIS.Segapp.DataAccess.UserDataSeeder">
+            <summary>
+            UserDataSeeder
+            </summary>
+        </member>
+    </members>
+</doc>
